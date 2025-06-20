@@ -54,12 +54,12 @@ After execution, results will be saved to:
 Run the following command to start all services:
 
 ```
-docker-compose up --build
+docker compose up --build
 ```
 
 ## 🧹 Clean Up
 To stop and remove containers:
 
 ```
-docker-compose down
+docker compose down
 ```
