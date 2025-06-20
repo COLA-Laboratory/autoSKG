@@ -1,0 +1,26 @@
+services:
+  grobid:
+    image: grobid/grobid:0.8.2
+    ports:
+      - "8070:8070"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8070/api/isalive"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    
+  kg_extractor:
+    image: szhou956/autoskg:latest
+    depends_on:
+      grobid:
+        condition: service_healthy
+    volumes:
+      - ./input_pdfs:/data/input_pdfs
+      - ./kg_project/input:/app/kg_project/input
+      - ./kg_project/output:/app/kg_project/output
+      - ./kg_project/cache:/app/kg_project/cache
+      - ./kg_project/logs:/app/kg_project/logs
+    env_file:
+      - .env
+    environment:
+      - PYTHONUNBUFFERED=1
