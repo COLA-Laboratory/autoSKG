@@ -9,14 +9,14 @@ This project extracts structured knowledge graph from PDF documents.
  - Your PDFs should be placed in the ``input_pdfs/`` folder
 
 ## 🐳Run with Docker Compose
-1.Clone the repository
+### 1.Clone the repository
 
 ```bash
 git clone https://github.com/COLA-Laboratory/autoSKG.git
 cd autoSKG
 ```
 
-2. Add input PDFs
+### 2. Add input PDFs
 Place your PDF files inside the ``input_pdfs/`` directory:
 ```
 input_pdfs/
@@ -24,7 +24,7 @@ input_pdfs/
 ├── paper2.pdf
 ```
 
-3. Set your OpenAI API Key
+### 3. Set your OpenAI API Key
 
 The `autoSKG` requires an OpenAI API key for GPT-based processing.
 
@@ -35,14 +35,14 @@ The `autoSKG` requires an OpenAI API key for GPT-based processing.
 OPENAI_API_KEY=your_openai_api_key_here
 ```
 
-4. Start the pipeline
+### 4. Start the pipeline
 Run the following command to start all services:
 
 ```
 docker-compose up --build
 ```
 
-### 📂 Output
+## 📂 Output
 After execution, results will be saved to:
   - kg_project/output/
   - kg_project/input/
