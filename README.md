@@ -12,7 +12,7 @@ This project extracts structured knowledge graph from PDF documents.
 1.Clone the repository
 
 ```bash
-git clone https://github.com/cola-szhou/autoSKG.git
+git clone https://github.com/COLA-Laboratory/autoSKG.git
 cd autoSKG
 ```
 
