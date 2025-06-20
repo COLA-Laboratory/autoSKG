@@ -19,7 +19,6 @@ services:
       - ./kg_project/input:/app/kg_project/input
       - ./kg_project/output:/app/kg_project/output
       - ./kg_project/cache:/app/kg_project/cache
-      - ./kg_project/logs:/app/kg_project/logs
     env_file:
       - .env
     environment:
