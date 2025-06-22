@@ -39,7 +39,7 @@ OPENAI_API_KEY=your_openai_api_key_here
 Run the following command to start all services:
 
 ```
-docker-compose up --build
+docker compose up --build
 ```
 
 ## 📂 Output
