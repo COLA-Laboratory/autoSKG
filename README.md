@@ -39,7 +39,7 @@ Place your PDF files inside the ``input_pdfs/`` directory:
 ```
 input_pdfs/
 ├── paper1.pdf
-├── paper2.pdf
+└── paper2.pdf
 ```
 
 ### 3. Set your OpenAI API Key
@@ -64,9 +64,12 @@ docker compose up --build
 
 ## 📂 Output
 After execution, results will be saved to:
-  - kg_project/output/
-  - kg_project/input/
-  - kg_project/cache/
+```
+kg_project/
+├── input/ # Preprocessed text data extracted from PDFs
+├── cache/ # Temporary data
+└── output/ # Final structured knowledge graph (KG) and extracted entity-relationship files
+```
 
 ---
 
