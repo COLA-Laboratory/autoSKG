@@ -96,3 +96,10 @@ docker compose down
 
 **[PlantScience.ai](https://plantscience.ai)** is a **virtual scientist for plant biology**, combining large language models with the domain-specific knowledge graph built by autoSKG.
 It provides accurate, citation-grounded answers and interactive graph visualizations of biological concepts — supporting next-generation scientific discovery.
+
+
+## License
+
+This project is licensed under the Apache License 2.0.
+
+© 2025 COLA Laboratory. All rights reserved.
