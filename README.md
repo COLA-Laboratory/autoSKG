@@ -1,3 +1,5 @@
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+
 # 🌿autoSKG
 
 **Automated Scientific Knowledge Graph Construction Pipeline for [PlantScience.ai](https://plantscience.ai)**  
